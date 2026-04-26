@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "CleanDrone — Limpieza de fachadas con drones en Tampa Bay",
+    "description": "Limpieza de fachadas de edificios segura, rápida y económica con drones. Atendemos Tampa Bay, Florida."
+  },
+  "nav": {
+    "benefits": "Beneficios",
+    "services": "Servicios",
+    "process": "Cómo funciona",
+    "gallery": "Galería",
+    "faq": "Preguntas",
+    "quote": "Cotizar"
+  },
+  "hero": {
+    "eyebrow": "Atendemos Tampa Bay, Florida",
+    "title": "Limpieza de fachadas con drones para edificios modernos",
+    "subtitle": "Limpiamos exteriores hasta un 60% más rápido, sin andamios y sin riesgo para tu equipo. Recibe tu cotización gratis en menos de 24 horas.",
+    "ctaPrimary": "Solicitar cotización gratis",
+    "ctaSecondary": "Ver cómo funciona"
+  },
+  "stats": {
+    "faster": "más rápido que la limpieza tradicional",
+    "saferLabel": "menos trabajadores en altura",
+    "savings": "de ahorro promedio en costo"
+  },
+  "benefits": {
+    "title": "Por qué limpiar con drones",
+    "subtitle": "Menos riesgo, menos interrupciones, menor costo.",
+    "items": [
+      {
+        "title": "Más seguro para todos",
+        "body": "Nuestros pilotos operan desde tierra. Sin plataformas suspendidas sobre peatones ni andamios que tramitar."
+      },
+      {
+        "title": "Trabajo más rápido",
+        "body": "Limpiamos una fachada de 20 pisos en un solo día, con mínima molestia para los inquilinos."
+      },
+      {
+        "title": "Menor costo",
+        "body": "Sin renta de andamios, sin mano de obra extendida, sin cierres viales. Pagas por la limpieza, no por el montaje."
+      },
+      {
+        "title": "Amigable con el ambiente",
+        "body": "Usamos agua purificada y detergentes biodegradables. Hasta un 70% menos agua que la hidrolavadora tradicional."
+      }
+    ]
+  },
+  "services": {
+    "title": "Qué limpiamos",
+    "subtitle": "Programas a la medida para cada tipo de edificio en Tampa Bay.",
+    "items": [
+      {
+        "title": "Oficinas y edificios altos",
+        "body": "Muros cortina de vidrio, marcos y señalización. Programas anuales o trimestrales."
+      },
+      {
+        "title": "Hoteles y resorts",
+        "body": "Mantén impecables las fachadas que ven los huéspedes sin interrumpir el check-in ni la zona de piscina."
+      },
+      {
+        "title": "Hospitales y escuelas",
+        "body": "Limpieza de bajo ruido y bajo impacto en horarios fuera de servicio, con protocolos estrictos."
+      },
+      {
+        "title": "Condominios y asociaciones",
+        "body": "Recupera la imagen del edificio y protege el valor de la propiedad con mantenimiento programado."
+      },
+      {
+        "title": "Paneles solares",
+        "body": "Recupera energía perdida eliminando polvo, sal y excremento de aves de tus paneles en azotea."
+      },
+      {
+        "title": "Naves industriales y bodegas",
+        "body": "Paneles metálicos, señalización y superficies en altura limpiadas en una sola visita."
+      }
+    ]
+  },
+  "process": {
+    "title": "Cómo funciona",
+    "subtitle": "De la primera llamada a fachada limpia en menos de dos semanas.",
+    "steps": [
+      {
+        "title": "1. Cuéntanos del edificio",
+        "body": "Llena el formulario con dirección, altura y algunas fotos. Te respondemos en menos de 24 horas."
+      },
+      {
+        "title": "2. Inspección sin costo",
+        "body": "Nuestro equipo visita la propiedad, confirma el alcance y prepara una cotización con precio fijo."
+      },
+      {
+        "title": "3. Día de limpieza",
+        "body": "Pilotos certificados ejecutan el trabajo con equipo autorizado por la FAA y seguro completo."
+      },
+      {
+        "title": "4. Reporte antes/después",
+        "body": "Recibes un reporte con fotos y video del trabajo, listo para compartir con tu equipo o consejo."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Antes y después",
+    "subtitle": "Resultados reales en edificios de Tampa Bay.",
+    "comingSoon": "Pronto agregaremos fotos de proyectos",
+    "captionBefore": "Antes",
+    "captionAfter": "Después"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿La limpieza con dron es segura para mis ventanas y fachada?",
+        "a": "Sí. Usamos cepillos suaves y presión calibrada para cada superficie, desde vidrio hasta concreto pintado."
+      },
+      {
+        "q": "¿Tienen seguro y autorización de la FAA?",
+        "a": "Todos nuestros pilotos están certificados FAA Parte 107 y contamos con seguro de responsabilidad civil por $2M USD."
+      },
+      {
+        "q": "¿Hasta qué altura pueden limpiar?",
+        "a": "Hoy operamos edificios de hasta 400 ft (alrededor de 35 pisos). Proyectos más altos bajo solicitud."
+      },
+      {
+        "q": "¿Los inquilinos tienen que desocupar el edificio?",
+        "a": "No. Coordinamos avisos para mantener ventanas cerradas y trabajamos por zonas, con mínima interrupción."
+      },
+      {
+        "q": "¿Cuánto cuesta el servicio?",
+        "a": "El precio depende del tipo de fachada, altura y acceso. La mayoría de los trabajos parten en $0.30 USD por pie cuadrado de fachada."
+      }
+    ]
+  },
+  "quote": {
+    "title": "Solicita tu cotización gratis",
+    "subtitle": "Cuéntanos del edificio y te respondemos en menos de 24 horas.",
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "company": "Empresa o asociación (opcional)",
+      "address": "Dirección del edificio",
+      "buildingType": "Tipo de edificio",
+      "buildingTypeOptions": {
+        "office": "Edificio de oficinas",
+        "hotel": "Hotel / resort",
+        "hospital": "Hospital / escuela",
+        "condo": "Condominio / asociación",
+        "industrial": "Industrial / bodega",
+        "solar": "Paneles solares",
+        "other": "Otro"
+      },
+      "floors": "Número aproximado de pisos",
+      "area": "Área aproximada de fachada (pies²)",
+      "message": "Notas (requerimientos especiales, fechas, etc.)"
+    },
+    "submit": "Enviar solicitud",
+    "submitting": "Enviando…",
+    "success": "¡Gracias! Te contactaremos en menos de 24 horas.",
+    "error": "Algo salió mal. Inténtalo de nuevo o escríbenos directamente.",
+    "privacy": "Solo usamos tu información para preparar la cotización."
+  },
+  "footer": {
+    "tagline": "Limpieza de fachadas con drones, hecha para Tampa Bay.",
+    "service": "Zona de servicio",
+    "serviceArea": "Tampa, St. Petersburg, Clearwater, Brandon, Wesley Chapel y zonas aledañas.",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  },
+  "language": {
+    "switch": "Idioma",
+    "en": "English",
+    "es": "Español"
+  }
+}

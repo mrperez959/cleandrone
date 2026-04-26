@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "CleanDrone — Drone Facade Cleaning in Tampa Bay",
+    "description": "Safe, fast and affordable building facade cleaning with drones. Serving Tampa Bay, Florida."
+  },
+  "nav": {
+    "benefits": "Benefits",
+    "services": "Services",
+    "process": "How it works",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "quote": "Get a quote"
+  },
+  "hero": {
+    "eyebrow": "Serving Tampa Bay, Florida",
+    "title": "Drone-powered facade cleaning for modern buildings",
+    "subtitle": "We clean exteriors up to 60% faster, with no scaffolding and no risk for your team. Get a free quote in under 24 hours.",
+    "ctaPrimary": "Request a free quote",
+    "ctaSecondary": "See how it works"
+  },
+  "stats": {
+    "faster": "faster than traditional cleaning",
+    "saferLabel": "fewer workers at height",
+    "savings": "average cost savings"
+  },
+  "benefits": {
+    "title": "Why drone cleaning",
+    "subtitle": "Less risk, less downtime, lower cost.",
+    "items": [
+      {
+        "title": "Safer for everyone",
+        "body": "Our pilots stay on the ground. No suspended platforms over pedestrians, no scaffolding to permit."
+      },
+      {
+        "title": "Faster turnaround",
+        "body": "We can clean a 20-story facade in a single day, with minimal disruption for tenants."
+      },
+      {
+        "title": "Lower cost",
+        "body": "No scaffolding rentals, no extended labor, no road closures. You pay for the clean, not the setup."
+      },
+      {
+        "title": "Eco-friendly",
+        "body": "We use purified water and biodegradable detergents. Up to 70% less water than pressure washing."
+      }
+    ]
+  },
+  "services": {
+    "title": "What we clean",
+    "subtitle": "Tailored programs for every building type in Tampa Bay.",
+    "items": [
+      {
+        "title": "Office buildings & high-rises",
+        "body": "Glass curtain walls, mullions and signage. Annual or quarterly programs available."
+      },
+      {
+        "title": "Hotels & resorts",
+        "body": "Keep guest-facing exteriors spotless without disrupting check-in or pool areas."
+      },
+      {
+        "title": "Hospitals & schools",
+        "body": "Low-noise, low-impact cleaning during off-hours with strict safety protocols."
+      },
+      {
+        "title": "Condominiums & HOAs",
+        "body": "Restore curb appeal and protect property values with scheduled maintenance."
+      },
+      {
+        "title": "Solar panel arrays",
+        "body": "Recover lost output by removing dust, salt and bird droppings from rooftop arrays."
+      },
+      {
+        "title": "Industrial & warehouses",
+        "body": "Metal cladding, signage and high-bay surfaces cleaned in a single visit."
+      }
+    ]
+  },
+  "process": {
+    "title": "How it works",
+    "subtitle": "From first call to clean facade in less than two weeks.",
+    "steps": [
+      {
+        "title": "1. Tell us about your building",
+        "body": "Fill the form with the address, height and a few photos. We respond within 24 hours."
+      },
+      {
+        "title": "2. Free site assessment",
+        "body": "Our team visits the property, confirms scope and prepares a fixed-price quote."
+      },
+      {
+        "title": "3. Cleaning day",
+        "body": "Certified pilots execute the job with FAA-compliant equipment and full insurance."
+      },
+      {
+        "title": "4. Before/after report",
+        "body": "You receive a photo and video report of the work, ready to share with stakeholders."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Before & after",
+    "subtitle": "Real results from buildings around Tampa Bay.",
+    "comingSoon": "Project photos coming soon",
+    "captionBefore": "Before",
+    "captionAfter": "After"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Is drone cleaning safe for my windows and facade?",
+        "a": "Yes. We use soft-bristle systems and calibrated pressure for each surface, from glass to painted concrete."
+      },
+      {
+        "q": "Do you have insurance and FAA authorization?",
+        "a": "All our pilots are FAA Part 107 certified and we carry $2M general liability insurance."
+      },
+      {
+        "q": "How tall a building can you clean?",
+        "a": "We currently service buildings up to 400 ft (around 35 stories). Taller projects on request."
+      },
+      {
+        "q": "Will tenants need to leave the building?",
+        "a": "No. We coordinate windows-closed notices and work in zones, with minimal disruption."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Pricing depends on facade type, height and access. Most jobs start at $0.30 per sq ft of facade."
+      }
+    ]
+  },
+  "quote": {
+    "title": "Request a free quote",
+    "subtitle": "Tell us about your building and we'll respond within 24 hours.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company or HOA (optional)",
+      "address": "Building address",
+      "buildingType": "Building type",
+      "buildingTypeOptions": {
+        "office": "Office building",
+        "hotel": "Hotel / resort",
+        "hospital": "Hospital / school",
+        "condo": "Condominium / HOA",
+        "industrial": "Industrial / warehouse",
+        "solar": "Solar array",
+        "other": "Other"
+      },
+      "floors": "Approximate number of floors",
+      "area": "Approximate facade area (sq ft)",
+      "message": "Notes (special requirements, timing, etc.)"
+    },
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "success": "Thanks! We'll be in touch within 24 hours.",
+    "error": "Something went wrong. Please try again or email us directly.",
+    "privacy": "We'll only use your information to prepare your quote."
+  },
+  "footer": {
+    "tagline": "Drone facade cleaning, made for Tampa Bay.",
+    "service": "Service area",
+    "serviceArea": "Tampa, St. Petersburg, Clearwater, Brandon, Wesley Chapel and surrounding areas.",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "switch": "Language",
+    "en": "English",
+    "es": "Español"
+  }
+}
