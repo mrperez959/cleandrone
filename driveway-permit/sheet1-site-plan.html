@@ -67,14 +67,21 @@
   /* FOOTER */
   .footer { text-align: center; font-size: 7pt; color: #444; border-top: 1px solid #888; padding-top: 2px; }
 
-  /* SVG text styles — small, generous spacing */
-  text { font-family: "Helvetica Neue", Arial, sans-serif; }
+  /* SVG text styles — small, with white halo to mask any line behind */
+  text {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    paint-order: stroke;
+    stroke: #ffffff;
+    stroke-width: 0.55;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
   .lbl { font-size: 1.15px; fill: #1a2332; }
-  .lbl-bold { font-size: 1.3px; fill: #1a2332; font-weight: 700; }
+  .lbl-bold { font-size: 1.3px; fill: #1a2332; font-weight: 700; stroke-width: 0.6; }
   .lbl-zone { font-size: 1.05px; fill: #6b6b6b; font-weight: 500; }
   .dim { font-size: 1.15px; fill: #0a3d62; font-weight: 600; }
-  .dim-bold { font-size: 1.35px; fill: #0a3d62; font-weight: 700; }
-  .badge-text { font-size: 1.15px; fill: #fff; font-weight: 700; text-anchor: middle; }
+  .dim-bold { font-size: 1.35px; fill: #0a3d62; font-weight: 700; stroke-width: 0.6; }
+  .badge-text { font-size: 1.15px; fill: #fff; font-weight: 700; text-anchor: middle; stroke: none; }
 
   /* SVG line styles */
   .property-line { stroke: #1a2332; stroke-width: 0.45; fill: none; }
