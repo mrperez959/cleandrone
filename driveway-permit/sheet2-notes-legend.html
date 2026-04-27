@@ -19,76 +19,111 @@
     gap: 6px;
   }
 
-  .title { text-align: center; }
-  .title h1 { margin: 0; font-size: 16pt; letter-spacing: 0.4px; }
-  .title h2 { margin: 2px 0 0 0; font-size: 9pt; font-weight: 500; color: #444; }
-  .rev { font-size: 8.5pt; color: #c0392b; font-weight: 700; }
+  /* HEADER */
+  .header { display: grid; grid-template-columns: 1fr 250px; gap: 10px; align-items: start; }
+  .title h1 { margin: 0; font-size: 14pt; letter-spacing: 0.3px; }
+  .title h2 { margin: 2px 0 0 0; font-size: 8pt; font-weight: 500; color: #444; }
+  .info-box { border: 1px solid #1a2332; font-size: 6.5pt; padding: 3px 6px; line-height: 1.3; }
+  .info-box .row { display: grid; grid-template-columns: 60px 1fr; }
+  .info-box .row b { letter-spacing: 0.3px; }
+  .rev { font-size: 7pt; color: #c0392b; font-weight: 700; }
 
-  /* Two-column main */
-  .main { display: grid; grid-template-columns: 1.15fr 1fr; gap: 8px; min-height: 0; }
+  /* MAIN: 2-col, full height */
+  .main { display: grid; grid-template-columns: 1.1fr 1fr; gap: 6px; min-height: 0; }
+  .col { display: flex; flex-direction: column; gap: 5px; min-height: 0; }
+  .col.left { min-height: 0; }
+  .col.right { min-height: 0; }
 
-  .panel { border: 1px solid #1a2332; }
-  .panel .ph { background: #1a2332; color: #fff; padding: 4px 8px; font-size: 9pt; font-weight: 700; letter-spacing: 0.4px; }
-  .panel .pb { padding: 5px 8px; font-size: 8pt; line-height: 1.35; }
+  .panel { border: 1px solid #1a2332; display: flex; flex-direction: column; min-height: 0; }
+  .panel .ph { background: #1a2332; color: #fff; padding: 2.5px 6px; font-weight: 700; font-size: 6.8pt; letter-spacing: 0.3px; }
+  .panel .pb { padding: 4px 7px; font-size: 6.5pt; line-height: 1.3; }
 
-  .col { display: flex; flex-direction: column; gap: 6px; min-height: 0; }
-  .col.notes { min-height: 0; overflow: hidden; }
+  .panel.grow { flex: 1 1 auto; min-height: 0; }
+  .panel.grow .pb { overflow: auto; min-height: 0; }
 
-  ol.notes { margin: 0; padding-left: 16px; font-size: 7.8pt; line-height: 1.32; }
-  ol.notes li { margin-bottom: 1.5px; }
+  ol.notes { margin: 0; padding-left: 14px; font-size: 6.4pt; line-height: 1.3; }
+  ol.notes li { margin-bottom: 1px; }
   .new { background: #fff3a8; padding: 0 1px; }
   .changed { background: #d6f0d6; padding: 0 1px; }
 
-  table.kv { width: 100%; border-collapse: collapse; font-size: 7.8pt; }
+  table.kv { width: 100%; border-collapse: collapse; font-size: 6.5pt; }
   table.kv td { padding: 1.5px 3px; vertical-align: top; }
-  table.kv td.k { width: 46%; font-weight: 700; }
+  table.kv td.k { width: 48%; font-weight: 700; }
 
-  table.req {
-    width: 100%; border-collapse: collapse; font-size: 7.5pt;
-  }
-  table.req th, table.req td { border: 1px solid #888; padding: 2.5px 4px; text-align: left; }
+  table.req { width: 100%; border-collapse: collapse; font-size: 6.3pt; }
+  table.req th, table.req td { border: 1px solid #888; padding: 2px 4px; text-align: left; }
   table.req th { background: #b88a3e; color: #fff; font-weight: 700; }
   .ok { color: #1d6b1d; font-weight: 700; }
 
-  .req-panel { border: 1px solid #b88a3e; }
-  .req-panel .ph { background: #b88a3e; color: #fff; padding: 4px 8px; font-size: 9pt; font-weight: 700; }
-  .req-panel .pb { padding: 4px 6px; }
+  .req-panel { border: 1px solid #b88a3e; display: flex; flex-direction: column; }
+  .req-panel .ph { background: #b88a3e; color: #fff; padding: 2.5px 6px; font-size: 6.8pt; font-weight: 700; }
+  .req-panel .pb { padding: 3px 5px; }
 
+  /* Cross-section detail */
+  .xsec { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; align-items: center; }
+  .xsec svg { width: 100%; height: 90px; display: block; }
+  .xsec .legend { font-size: 6pt; line-height: 1.4; }
+  .xsec .legend .row { display: grid; grid-template-columns: 14px 1fr; gap: 4px; align-items: center; margin-bottom: 2px; }
+  .xsec .legend .swt { width: 12px; height: 8px; border: 1px solid #1a2332; }
+
+  /* Revision history */
+  table.rev-table { width: 100%; border-collapse: collapse; font-size: 6.3pt; }
+  table.rev-table th, table.rev-table td { border: 1px solid #888; padding: 2px 4px; text-align: left; }
+  table.rev-table th { background: #1a2332; color: #fff; font-weight: 700; }
+
+  /* LEGEND BAR */
   .legend-bar {
-    border: 1px solid #888; padding: 4px 8px;
-    display: grid; grid-template-columns: repeat(7, auto); gap: 12px;
-    align-items: center; font-size: 7.5pt;
+    border: 1px solid #888;
+    padding: 3px 6px;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    gap: 10px;
+    align-items: center;
+    font-size: 6.5pt;
   }
-  .legend-bar .item { display: flex; align-items: center; gap: 4px; }
-  .swatch { width: 18px; height: 10px; border: 1px solid #1a2332; }
+  .legend-bar .item { display: flex; align-items: center; gap: 3px; }
+  .swatch { width: 14px; height: 8px; border: 1px solid #1a2332; }
 
+  /* Signature + footer */
   .signature-row {
     display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
-    font-size: 8pt; padding-top: 4px;
+    font-size: 7pt; padding-top: 2px;
   }
-  .sig-line { border-top: 1px solid #1a2332; margin-top: 14px; padding-top: 1px; }
+  .sig-line { border-top: 1px solid #1a2332; margin-top: 12px; padding-top: 1px; }
+  .footer { text-align: center; font-size: 7pt; color: #444; border-top: 1px solid #888; padding-top: 2px; margin-top: 3px; }
 
-  .footer { text-align: center; font-size: 8pt; color: #444; border-top: 1px solid #888; padding-top: 3px; }
+  /* SVG xsec text styles */
+  .xsec text { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 2.4px; fill: #1a2332; }
+  .xsec .dim-text { font-size: 2.2px; fill: #0a3d62; font-weight: 600; }
 </style>
 </head>
 <body>
 
 <div class="sheet">
 
-  <!-- ==================== TITLE ==================== -->
-  <div class="title">
-    <h1>NOTES, LEGEND &amp; PROJECT INFORMATION <span class="rev">[REV. 1 — APR 2026]</span></h1>
-    <h2>8506 Seven Coves Court · Hillsborough County, FL · Sheet 2 of 2</h2>
+  <!-- ==================== HEADER ==================== -->
+  <div class="header">
+    <div class="title">
+      <h1>NOTES, LEGEND &amp; PROJECT INFORMATION <span class="rev">[REV. 1 — APR 2026]</span></h1>
+      <h2>8506 Seven Coves Court · Hillsborough County, FL · After-the-fact ROW Permit</h2>
+    </div>
+    <div class="info-box">
+      <div class="row"><b>ADDRESS:</b><span>8506 Seven Coves Ct, Tampa FL 33634</span></div>
+      <div class="row"><b>PERMIT:</b><span>After-the-fact ROW — Driveway Access</span></div>
+      <div class="row"><b>SCALE:</b><span>Approx. 1" = 8 ft (Sheet 1)</span></div>
+      <div class="row"><b>DATE:</b><span>April 2026 — Rev. 1</span></div>
+      <div class="row"><b>SHEET:</b><span>2 of 2 — Notes &amp; Legend</span></div>
+    </div>
   </div>
 
   <!-- ==================== MAIN ==================== -->
   <div class="main">
 
-    <!-- ============ LEFT: NOTES ============ -->
-    <div class="col notes">
-      <div class="panel" style="display:flex; flex-direction:column; min-height:0;">
+    <!-- ============ LEFT COLUMN ============ -->
+    <div class="col left">
+      <div class="panel grow">
         <div class="ph">CONSTRUCTION NOTES (Revised)</div>
-        <div class="pb" style="overflow:auto;">
+        <div class="pb">
           <ol class="notes">
             <li>All driveway construction: 6" reinforced concrete on 6" compacted base material (limerock or equivalent). Pre-existing condition; no new construction proposed.</li>
             <li>DW1 width: 17 ft. DW2 width: 10 ft. Both rectangular cross-section.</li>
@@ -100,21 +135,32 @@
             <li>DW1 set back 5 ft from the left property corner (dimensioned on Sheet 1).</li>
             <li><span class="changed">Property line at NE corner curves at R = 14 ft (cul-de-sac geometry). This is <b>NOT</b> a driveway flare. DW2 right edge clears the start of the curve by 17 ft.</span></li>
             <li>SOD to be restored in any disturbed ROW areas.</li>
-            <li>Contractor / homeowner to call 811 (Sunshine 811) before any excavation. (No excavation proposed.)</li>
+            <li>Contractor / homeowner to call 811 (Sunshine 811) before any excavation. (No excavation proposed under this after-the-fact permit.)</li>
             <li><span class="new">ROW = 50 ft total (25 ft each side of CL). Roadway pavement = 24 ft total (12 ft each side of CL). Distance from EOP to property line = 13 ft (grass / swale).</span></li>
             <li><span class="new">Utility easement: 5 ft strip on the inside of the property line. No utilities within easement conflict with either driveway.</span></li>
             <li><span class="new">No public utilities (water main, sanitary sewer, storm pipe, gas, comms) are crossed or relocated by the existing driveways. WM and EB are surface assets only and clearances meet County minimums.</span></li>
             <li><span class="new">Driveways pre-existing at time of property purchase (December 22, 2025). This permit is filed after-the-fact for legalization to Hillsborough County standards.</span></li>
+            <li>Site visibility (LDC § 6.04.03): no obstructions between 2.5 ft and 8 ft above grade in clear sight triangles. Lot is interior on a cul-de-sac court.</li>
           </ol>
-          <p style="font-size:7pt; color:#666; margin:6px 0 0;">
+          <p style="font-size:6pt; color:#666; margin:4px 0 0;">
             Highlight key: <span class="changed">green</span> = revised note · <span class="new">yellow</span> = new note added in Rev. 1
           </p>
         </div>
       </div>
+
+      <div class="panel">
+        <div class="ph">REFERENCED STANDARDS</div>
+        <div class="pb">
+          Hillsborough County Land Development Code (LDC) Article VI, Part 6.04.00 — Access Management ·
+          Hillsborough County Transportation Technical Manual §5.8 and Typical Detail TD-7 ·
+          Hillsborough County Utility Accommodation Guide and Rights-of-Way Use Procedures Manual (UAG/ROW) ·
+          Sunshine State One Call (811).
+        </div>
+      </div>
     </div>
 
-    <!-- ============ RIGHT: PROJECT INFO + DIMENSIONS + COMPLIANCE ============ -->
-    <div class="col">
+    <!-- ============ RIGHT COLUMN ============ -->
+    <div class="col right">
 
       <div class="panel">
         <div class="ph">PROJECT INFORMATION</div>
@@ -126,8 +172,6 @@
             <tr><td class="k">Number of Driveways:</td><td>Two (2) — DW1 &amp; DW2</td></tr>
             <tr><td class="k">Lot Type:</td><td>Interior residential, no sidewalk, on cul-de-sac</td></tr>
             <tr><td class="k">Property Frontage:</td><td>59 ft</td></tr>
-            <tr><td class="k">Scale:</td><td>Approx. 1" = 8 ft</td></tr>
-            <tr><td class="k">Drawing Date:</td><td><span class="changed">April 2026 — Revision 1</span></td></tr>
             <tr><td class="k">Date Acquired:</td><td>December 22, 2025 (driveways pre-existing)</td></tr>
           </table>
         </div>
@@ -137,16 +181,70 @@
         <div class="ph">DRIVEWAY DIMENSIONS</div>
         <div class="pb">
           <table class="kv">
-            <tr><td class="k">DW1 Width:</td><td>17 ft</td></tr>
-            <tr><td class="k">DW1 Material:</td><td>6" Reinf. Conc. on 6" Comp. Base</td></tr>
-            <tr><td class="k">DW1 Setback (left PL corner):</td><td>5 ft</td></tr>
-            <tr><td class="k">DW2 Width:</td><td>10 ft</td></tr>
-            <tr><td class="k">DW2 Material:</td><td>6" Reinf. Conc. on 6" Comp. Base</td></tr>
-            <tr><td class="k">DW2 Clearance to PL Curve:</td><td>17 ft</td></tr>
-            <tr><td class="k">Separation DW1 ↔ DW2 @ EOP:</td><td>10 ft (min. 10 ft) <span class="ok">✓</span></td></tr>
-            <tr><td class="k"><span class="changed">Driveway Geometry:</span></td><td><span class="changed">Rectangular; no flares (existing condition)</span></td></tr>
-            <tr><td class="k"><span class="changed">PL Curve at NE corner:</span></td><td><span class="changed">R = 14 ft (cul-de-sac PL, not a driveway flare)</span></td></tr>
+            <tr><td class="k">DW1 Width / Setback:</td><td>17 ft  /  5 ft from left PL corner</td></tr>
+            <tr><td class="k">DW2 Width / Clearance:</td><td>10 ft  /  17 ft to PL curve</td></tr>
+            <tr><td class="k">DW1 &amp; DW2 Material:</td><td>6" Reinf. Conc. on 6" Comp. Base</td></tr>
+            <tr><td class="k">Separation @ EOP:</td><td>10 ft (min. 10 ft) <span class="ok">✓</span></td></tr>
+            <tr><td class="k"><span class="changed">Driveway Geometry:</span></td><td><span class="changed">Rectangular; no flares (existing)</span></td></tr>
+            <tr><td class="k"><span class="changed">PL Curve at NE corner:</span></td><td><span class="changed">R = 14 ft (cul-de-sac PL, NOT a flare)</span></td></tr>
           </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="ph">TYPICAL DRIVEWAY CROSS-SECTION</div>
+        <div class="pb">
+          <div class="xsec">
+            <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid meet">
+              <!-- Subgrade (existing soil) -->
+              <rect x="0" y="20" width="60" height="10" fill="#d4b88a" />
+              <!-- 6" compacted base (limerock) -->
+              <rect x="6" y="14" width="48" height="6" fill="#e0c890" stroke="#7a4c00" stroke-width="0.18" />
+              <!-- 6" reinforced concrete slab -->
+              <rect x="6" y="8" width="48" height="6" fill="#7da6c9" stroke="#234e70" stroke-width="0.2" />
+              <!-- Reinforcement bars / wire mesh (dots inside concrete) -->
+              <g fill="#1a2332">
+                <circle cx="12" cy="11" r="0.5" />
+                <circle cx="20" cy="11" r="0.5" />
+                <circle cx="28" cy="11" r="0.5" />
+                <circle cx="36" cy="11" r="0.5" />
+                <circle cx="44" cy="11" r="0.5" />
+                <circle cx="48" cy="11" r="0.5" />
+              </g>
+              <!-- Finish grade arrows on top -->
+              <line x1="6" y1="8" x2="3" y2="6" stroke="#1a2332" stroke-width="0.2" />
+              <line x1="3" y1="6" x2="3" y2="3" stroke="#1a2332" stroke-width="0.2" />
+              <text x="3.2" y="3" fill="#1a2332" font-style="italic">finish grade</text>
+
+              <!-- Layer labels -->
+              <text x="30" y="11.7" text-anchor="middle" fill="#fff" font-weight="700">6" REINF. CONCRETE</text>
+              <text x="30" y="17.7" text-anchor="middle" fill="#5a3500" font-weight="700">6" COMPACTED BASE (LIMEROCK)</text>
+              <text x="30" y="26"   text-anchor="middle" fill="#5a3500">EXISTING SUBGRADE</text>
+
+              <!-- Vertical dimension on left -->
+              <line x1="2.5" y1="8"  x2="2.5" y2="14" stroke="#0a3d62" stroke-width="0.18" />
+              <line x1="1.7" y1="8"  x2="3.3" y2="8"  stroke="#0a3d62" stroke-width="0.22" />
+              <line x1="1.7" y1="14" x2="3.3" y2="14" stroke="#0a3d62" stroke-width="0.22" />
+              <text class="dim-text" x="0.5" y="11.5" fill="#0a3d62">6"</text>
+
+              <line x1="2.5" y1="14" x2="2.5" y2="20" stroke="#0a3d62" stroke-width="0.18" />
+              <line x1="1.7" y1="20" x2="3.3" y2="20" stroke="#0a3d62" stroke-width="0.22" />
+              <text class="dim-text" x="0.5" y="17.5" fill="#0a3d62">6"</text>
+
+              <!-- Total slab thickness bracket on right -->
+              <line x1="56" y1="8"  x2="56" y2="20" stroke="#0a3d62" stroke-width="0.18" />
+              <line x1="55" y1="8"  x2="57" y2="8"  stroke="#0a3d62" stroke-width="0.22" />
+              <line x1="55" y1="20" x2="57" y2="20" stroke="#0a3d62" stroke-width="0.22" />
+              <text class="dim-text" x="58" y="14.5" fill="#0a3d62">12"</text>
+            </svg>
+            <div class="legend">
+              <div class="row"><div class="swt" style="background:#7da6c9"></div>6" reinforced concrete slab</div>
+              <div class="row"><div class="swt" style="background:#e0c890"></div>6" compacted base (limerock or equiv.)</div>
+              <div class="row"><div class="swt" style="background:#d4b88a"></div>existing subgrade (undisturbed)</div>
+              <div class="row"><div class="swt" style="background:#1a2332;border-radius:50%;width:6px;height:6px"></div>reinforcement bars / wire mesh</div>
+              <p style="margin:3px 0 0; font-size:5.8pt; color:#555;">Per HC TD-7 typical residential driveway. Section shown is representative; existing in-place condition.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -155,15 +253,30 @@
         <div class="pb">
           <table class="req">
             <thead>
-              <tr><th>Requirement</th><th style="width:80px">County Min</th><th style="width:80px">As Shown</th><th style="width:60px">Status</th></tr>
+              <tr><th>Requirement</th><th style="width:75px">County Min</th><th style="width:75px">As Shown</th><th style="width:60px">Status</th></tr>
             </thead>
             <tbody>
               <tr><td>DW1 ↔ DW2 separation @ EOP</td><td>10 ft</td><td>10 ft</td><td class="ok">MEETS ✓</td></tr>
               <tr><td>WM to driveway edge</td><td>1 ft</td><td>3 ft</td><td class="ok">MEETS ✓</td></tr>
               <tr><td>EB to driveway edge</td><td>3 ft</td><td>3 ft</td><td class="ok">MEETS ✓</td></tr>
-              <tr><td>Utility / tree / structure to driveway</td><td>3 ft</td><td>3 ft min.</td><td class="ok">MEETS ✓</td></tr>
+              <tr><td>Utility / tree to driveway</td><td>3 ft</td><td>3 ft min.</td><td class="ok">MEETS ✓</td></tr>
               <tr><td>Neighbor DW to DW1 @ EOP</td><td>10 ft</td><td>10 ft</td><td class="ok">MEETS ✓</td></tr>
               <tr><td>Driveways limited to property side of EOP</td><td>required</td><td>terminate at EOP</td><td class="ok">REVISED ✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="ph">REVISION HISTORY</div>
+        <div class="pb">
+          <table class="rev-table">
+            <thead>
+              <tr><th style="width:50px">Rev.</th><th style="width:70px">Date</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>0</td><td>Mar 2026</td><td>Initial submittal</td></tr>
+              <tr><td><b>1</b></td><td><b>Apr 2026</b></td><td><b>Responds to ROW reviewer Issues #1, #2, #3 (Renier Quintana, 3/17/2026): driveways now terminate at EOP; PL / ROW / easement / EOP / CL labeled with dimensions; overlapping labels eliminated; construction notes corrected (R=14 ft is cul-de-sac PL, not a driveway flare).</b></td></tr>
             </tbody>
           </table>
         </div>
@@ -181,7 +294,8 @@
     <div class="item"><div class="swatch" style="background:#fadcdc"></div>UTILITY EASEMENT (5 ft)</div>
     <div class="item"><div class="swatch" style="background:#e8f1fa"></div>PRIVATE PROPERTY</div>
     <div class="item"><div class="swatch" style="background:#c8c8c8;border:1px dashed #777"></div>NEIGHBOR DW (schematic)</div>
-    <div class="item"><div class="swatch" style="background:#1a2332;border-radius:50%;width:12px;height:12px"></div>NUMBERED CALLOUT</div>
+    <div class="item"><div class="swatch" style="background:#fff;border:1px solid #1a4d80;border-radius:50%;width:10px;height:10px"></div>WATER METER (WM)</div>
+    <div class="item"><div class="swatch" style="background:#fff;border:1px solid #7a4c00;width:10px;height:10px"></div>ELECTRIC BOX (EB)</div>
   </div>
 
   <!-- ==================== SIGNATURE + FOOTER ==================== -->
@@ -196,7 +310,7 @@
         <div>Property: 8506 Seven Coves Ct, Tampa FL 33634</div>
       </div>
     </div>
-    <div class="footer" style="margin-top:4px;">
+    <div class="footer">
       Sheet 2 of 2 — Notes &amp; Legend ·
       <span class="rev">REV. 1 — INCORPORATES REVIEWER COMMENTS (Issues #1, #2, #3)</span>
     </div>
