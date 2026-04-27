@@ -44,15 +44,16 @@ export function Hero({ dict }: { dict: Dictionary }) {
         </div>
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 via-brand-500 to-brand-300 shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+              alt="Modern glass skyscraper viewed from below"
+              className="absolute inset-0 h-full w-full object-cover"
+              loading="eager"
+            />
             <div
               aria-hidden
-              className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_rgba(255,255,255,0.35),_transparent_50%)]"
+              className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"
             />
-            <div className="absolute inset-0 flex items-center justify-center text-white/90">
-              <span className="text-7xl drop-shadow-lg" aria-hidden>
-                🛸
-              </span>
-            </div>
             <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/95 p-4 text-slate-900 shadow-lg backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
                 Tampa Bay

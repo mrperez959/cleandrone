@@ -98,11 +98,9 @@
     ]
   },
   "gallery": {
-    "title": "Before & after",
-    "subtitle": "Real results from buildings around Tampa Bay.",
-    "comingSoon": "Project photos coming soon",
-    "captionBefore": "Before",
-    "captionAfter": "After"
+    "title": "Buildings we love to clean",
+    "subtitle": "From glass towers to mid-rise condos, our drones handle every facade in Tampa Bay.",
+    "disclaimer": "Illustrative images. Photos of our own projects coming soon."
   },
   "faq": {
     "title": "Frequently asked questions",

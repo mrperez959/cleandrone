@@ -98,11 +98,9 @@
     ]
   },
   "gallery": {
-    "title": "Antes y después",
-    "subtitle": "Resultados reales en edificios de Tampa Bay.",
-    "comingSoon": "Pronto agregaremos fotos de proyectos",
-    "captionBefore": "Antes",
-    "captionAfter": "Después"
+    "title": "Edificios que nos encanta limpiar",
+    "subtitle": "Desde torres de vidrio hasta condominios de mediana altura, nuestros drones limpian cualquier fachada en Tampa Bay.",
+    "disclaimer": "Imágenes ilustrativas. Pronto agregaremos fotos de nuestros propios proyectos."
   },
   "faq": {
     "title": "Preguntas frecuentes",
